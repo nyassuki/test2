@@ -3,12 +3,12 @@ const csv = require('csv-parser');
 const { ethers } = require('ethers');
 require('dotenv').config();
 
-const provider = new ethers.providers.JsonRpcProvider(process.env.BSC_RPC_URL);
+const provider = new ethers.providers.JsonRpcProvider("https://bnb-mainnet.g.alchemy.com/v2/R6vw-Z-lEqm-DmBIPstMZFN7alTQx_qk");
 
 async function loadPools() {
     return new Promise((resolve, reject) => {
         const pools = [];
-        fs.createReadStream('pairs/pairs.csv')
+        fs.createReadStream('./pairs.csv')
             .pipe(csv())
             .on('data', (row) => {
                 pools.push({
