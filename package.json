@@ -5,8 +5,6 @@
     "install": "npm install --legacy-peer-deps --force"
   },
   "dependencies": {
-    "axios": "^1.7.9",
-    "dotenv": "^16.4.7",
     "ethers": "^5.7.2"
   }
 }
