@@ -5,6 +5,9 @@
     "@nomicfoundation/hardhat-toolbox": "^5.0.0",
     "hardhat": "^2.22.18"
   },
+   "scripts": {
+    "install": "npm install --legacy-peer-deps"
+  },
   "dependencies": {
     "@aave/core-v3": "^1.19.3",
     "@nomiclabs/hardhat-ethers": "^2.2.3",
