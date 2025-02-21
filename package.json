@@ -6,7 +6,7 @@
     "hardhat": "^2.22.18"
   },
    "scripts": {
-    "install": "npm install --legacy-peer-deps"
+    "install": "npm install --legacy-peer-deps --force"
   },
   "dependencies": {
     "@aave/core-v3": "^1.19.3",
